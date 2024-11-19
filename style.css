@@ -1,0 +1,292 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+}
+
+header {
+    background-color: #1a502e;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+ 
+nav ul li {
+    margin-right: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-order {
+    background-color: darkcyan;
+    color: white;
+    padding: 25px;
+    border-radius: 300px;
+}
+
+/* Hero section*/
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #174126;
+    color: white;
+}
+
+.hero-image {
+    width: 200%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 50px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-left: 50px;
+}
+
+.hero-content h1 {
+    font-family: 2.5rem;
+}
+
+.btn-primary {
+    background-color: darkcyan;
+    color: white;
+    margin: auto;
+    display: inline-block;
+    padding: 25px;
+    border-radius: 300px;
+    text-decoration: none;
+    margin-top: 25px;
+}
+
+/* product section */
+#products h2 {
+    padding: 50px 00 10px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    background-color: #174126;
+}
+
+.product-list  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 19px;
+    background-color: #174126;
+    color: white;
+}
+
+.product {
+    text-align: center;
+    max-width: 200px;
+    margin: auto;
+
+}
+
+.product img {
+    width: auto;
+    height: 200px;
+    border-radius: 400px;
+    margin-top: 50px;
+}
+
+/* testimonial sectionn */
+#testimonials h2 {
+    padding: 50px 00 10px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    background-color: #174126;
+}
+
+.testimonial-content  {
+    display: flex;
+    background-color: #174126;
+    color: white;
+}
+
+.testimonial {
+    text-align: center;
+    max-width: 200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.testimonial img {
+    width: auto;
+    height: 250px;
+    border-radius: 100px;
+}
+
+/* Contact Us Section */
+#contact {
+    padding: 40px;
+    text-align: center;
+    background-color: #174126;
+    color: white;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 200px;;
+}
+
+button {
+    padding: 20px 20px;
+    background-color: darkcyan;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    background-color: #1a502e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* media for respon */
+
+@media(max-width:768px) {
+
+.logo {
+    margin: auto;
+}
+
+nav ul {
+    display: none;
+}
+
+nav {
+    flex-direction: column;
+}
+
+.btn-order {
+    margin-top: 10px;
+    margin: auto;
+}
+
+#hero {
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-image {
+    width: 300px;
+    margin: auto;
+}
+
+.hero-content {
+    margin: auto;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+}
+
+.btn-primary {
+    margin-bottom: 10px;
+}
+
+.product {
+    margin: auto;
+}
+
+#product h2 {
+    text-align: center;
+}
+
+.product-list {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.testimonials {
+    flex-direction: column;
+}
+
+.testimonial {
+    margin: auto;
+}
+
+form input,
+form textarea {
+    width: 90%;
+}
+}
+
+@media(max-width:480px) {
+
+.logo {
+    margin: auto;
+}
+
+.hero-content {
+    font-size: 1.8rem;
+    margin: auto;
+}
+
+.hero-image {
+    width: 300px;
+    margin: auto;
+}
+
+.product {
+    width: 100%;
+    margin: auto;
+}
+
+.testimonial {
+    width: 100%;
+}     }
